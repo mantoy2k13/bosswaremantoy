@@ -1,0 +1,112 @@
+.card-profile .card-header {
+  background: url("../img/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 12rem;
+}
+.profile-img {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0;
+  top: 50%;
+  left: 10%;
+}
+.camera-icon {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  bottom: -80px;
+  right: 44px;
+  background: #eee;
+  color: #444;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+.profile-picture {
+  width: 15rem;
+  height: 12rem;
+  position: absolute;
+  left: 10%;
+}
+.card.card-profile.card-profile-header {
+  border-radius: 0;
+}
+.cust-card {
+  background: #fff;
+  box-shadow: 2px 0px 9px 2px #dcdcdc;
+  padding: 30px 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.profile-info-wrapper {
+  padding-left: 25rem;
+  padding-right: 19px;
+  line-height: 0.9;
+}
+/* Reusable */
+.profile-img img {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  height: 100%;
+  width: auto !important;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+hr {
+  display: #1a0e0e;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+  background-color: #007bff;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 287px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #000000;
+  background-color: #dae1e9;
+  border-color: #ffffff #ffffff #ffffff;
+  color: #121213;
+}
+a:hover {
+  color: #030303;
+  text-decoration: underline;
+}
+.h5,
+h5 {
+  font-size: 1.25rem;
+  text-align: left;
+}
+/* Solid border */
+hr.solid {
+  border-top: 1px solid #bbb;
+}
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  border-radius: ;
+  max-width: 50%;
+  height: auto;
+}
+img.img-thumbnail.img-responsive.add {
+  max-width: 100%;
+}
