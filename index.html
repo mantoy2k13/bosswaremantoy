@@ -11,37 +11,50 @@
 <meta content="" name="keywords">
 <link href="./css/tailwind.css" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="./chart/dist/Chart.min.css" rel="stylesheet">
 </head>
 <body class="bg-white">
+
     <!-- Navigation -->
   <!--
       layout for bosware frame
       https://xd.adobe.com/view/04fbf2ce-dd33-4f86-b38a-09d38d421ccd-51a8/screen/e568dc71-e5ca-427a-849e-24a21a37f26b/
   -->
+  <!-- content-->
+
+  <div class="flex mb-4">
+    <div class="w-1/2 h-12 shadow-lg">1
+        
+    </div>
+    <div class="w-1/2 bg-gray-500 h-12">2</div>
+  </div>
+  
       <div class="row-auto">
         <!-- first column-->
+        <div class="flex ...">
+            <!-- ... -->
+            <div class="flex-none md:flex-1 ...">
+                Responsive flex item
+            </div>
+            <!-- ... -->
+        </div>
           <div class="grid grid-cols-2 gap-0">
-            <div class="mx-auto shadow-lg md:grid-cols-6 ml-20 ">
+            <div class="mx-auto shadow-lg md:grid-cols-6 ml-20 w-full ">
                 <h1 class="text-center p-3 text-3xl"> MOODS & EVENTS</h1>
                 <hr class="w-10 mx-auto h-1 bg-blue-500 my-4">
-                    <h1 class="text-center text-lg font-medium"> How you have been feeling this 2020:</h1>
-                    <img class="mx-auto w-1/2" src="./img/lifetrack_moods&events.png">
-                    <p class="text-center p-1">Sorry, It seems you haven't added a mood yet.</p>
-                    <p class="text-center p-1">Start adding every end of the week and we'll show you how you're doing for a year.</p>
-                <div class="mx-auto mt-10">
-                    <hr class="py-1">
+                <div class="w-4/12 float-left border border-black">
+                     <canvas id="myChart" width="400" height="400"></canvas>
                 </div>
-                <div class="mt-10">
-                     <h1 class="text-center text-3xl py-4">Your Weekly Highlights</h1>
-                    <img class="mx-auto w-1/2 py-2" src="./img/lifetrack_journal.png">
-                </div>
-                <div class="mt-10">
-                    <p class="text-center">Oops! There are no entries to show this week.</p>
-                    <p class="text-center">Create an entry and express how you're feeling.</p>
-                </div>
-                <div class="mt-10">
-                    <hr>
-                    <h1 class="text-center text-blue-500 py-4">VIEW MY JOURNAL</h1>
+                <div class="w-8/12 float-left border border-black block">
+                     <h1 class="px-4 text-lg">How you have been feeling this 2020:</h1>
+                     <p class="text-justify px-4">From the beginning of the year up to present, we've counted your moods. to show you How
+                         you've been doing to help you how to decide with your current of future situations.
+                     </p>
+                     <ul class="list-none md:list-disc ">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                        <li>Assumenda, quia temporibus eveniet a libero incidunt suscipit</li>
+                        <li>Quidem, ipsam illum quis sed voluptatum quae eum fugit earum</li>
+                      </ul>
                 </div>
             </div>
             <!-- end first column -->
@@ -93,10 +106,11 @@
                         </div>
                     </div>                
             </div>
-          </div>
-     </div>
+        </div>
+    </div>
      <div class="clear-both m-6"></div>
      <!-- end second culomn -->
+    <!-- end content -->
     <!-- footer-->
     <div class="bg-blue w-full  flex font-sans" style="background-image:url('img/footer.png');">
         <div class="container mx-auto">
@@ -104,5 +118,34 @@
         </div>
     </div>
     <!-- end footer-->
+    <script src="./chart/dist/Chart.bundle.js"></script>
+    <script src="./chart/dist/Chart.bundle.min.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    label: '# of Votes',
+                    data: [6, 3, 15, 5],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.9)',
+                        'rgba(54, 162, 235, 0.9)',
+                        'rgba(255, 206, 86, 0.9)',
+                        'rgba(75, 192, 192, 0.9)'
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)'
+
+                    ],
+                    borderWidth: 1
+                }]
+            }
+        });
+    </script>
 </body>
 </html> 
