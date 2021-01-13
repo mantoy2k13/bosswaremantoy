@@ -1,0 +1,85 @@
+/* RESPONSIVE */
+@media only screen and (max-width:1440px){
+    .tab-card-body {
+        padding: 3rem 4rem;
+    }
+    .sub-card {
+        margin: 10px 15px 40px 15px;
+    }
+}
+@media only screen and (max-width:991px){
+    .info-profile {
+        display: block;
+        width: 100%;
+    }
+    .info-content {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .profile-img {
+        top: -115px;
+        left: 0;
+    }
+    .icon {
+        right: -145px;
+        top: 40px;
+        left: 0;
+        margin: 0 auto;
+        width: 40px;
+    }
+    .icon.icon-banner {
+        top: 90px;
+        right: 0;
+        margin-right: 20px;
+        width: auto;
+        left: auto;
+    }
+    .icon.icon-pen {
+        top: 70px;
+        right: 0;
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width:767px){
+    .tab-card-body {
+        padding: 15px;
+    }
+    .footer {
+        padding: 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .profile-img {
+        top: -55px;
+        width: 10rem;
+        height: 10rem;
+    }
+    .info-content h1 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #3c3c3c;
+    }
+    .info-content p {
+        font-size: 15px;
+    }
+    .rate-img {
+        width: 60px;
+        height: 60px;
+        margin: 0 5px;
+    }
+}
+@media only screen and (max-width:425px){
+    .rate-img {
+        width: 35px;
+        height: 35px;
+        margin: 0 5px;
+    }
+    .rate-by-smile {
+        padding: 0;
+    }
+    .banner {
+        margin: 0 !important;
+    }
+}
