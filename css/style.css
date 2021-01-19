@@ -1,6 +1,20 @@
 .banner {
     background-image: url('../img/bg-header.jpg');
 }
+
+.laptop {
+  background-image: url('../img/employer_review_page.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 86rem;
+  position: absolute;
+  right: 100px;
+  background-size: contain;
+  top:100px;
+  bottom: 0;
+}
+
 .profile-img {
     position: absolute;
     width: 13rem;
@@ -260,6 +274,36 @@
   background-size: contain;
   bottom: 0;
 }
+
+/* scroll-y with style*/
+.overflow-y-scroll {  
+  height: 400px;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+  width: 100%;
+  background:none;
+}
+
+.force-overflow {
+  min-height:450px;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-track {
+  border: 1px solid #fff;
+  padding: 2px 0;
+  background-color:  #e7e7e7; 
+}
+
+.overflow-y-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #7fbae7;
+}
+
+/*end scroll-y with style*/
 /* achievements */
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 
