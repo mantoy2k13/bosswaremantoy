@@ -9,6 +9,7 @@
 <meta name="author" content="Remotodojo">
 <meta content="" name="description">
 <meta content="" name="keywords">
+<<<<<<< HEAD
 <link href="./tailwind.css" rel="stylesheet">
 <link href="./css/style.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
@@ -60,6 +61,55 @@
         <div class="info-profile">
             <div class="profile-img">
                 <img src="img/profile.jpg" alt="Profile Image">
+=======
+<link href="./css/tailwind.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="./chart/dist/Chart.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+
+    <!-- Navigation -->
+  <!--
+      layout for bosware frame
+      https://xd.adobe.com/view/04fbf2ce-dd33-4f86-b38a-09d38d421ccd-51a8/screen/e568dc71-e5ca-427a-849e-24a21a37f26b/
+  -->
+  <!-- content-->
+
+  <div class="flex mb-4">
+    <div class="w-1/2 h-12 shadow-lg">1
+        
+    </div>
+    <div class="w-1/2 bg-gray-500 h-12">2</div>
+  </div>
+  
+      <div class="row-auto">
+        <!-- first column-->
+        <div class="flex ...">
+            <!-- ... -->
+            <div class="flex-none md:flex-1 ...">
+                Responsive flex item
+            </div>
+            <!-- ... -->
+        </div>
+          <div class="grid grid-cols-2 gap-0">
+            <div class="mx-auto shadow-lg md:grid-cols-6 ml-20 w-full ">
+                <h1 class="text-center p-3 text-3xl"> MOODS & EVENTS</h1>
+                <hr class="w-10 mx-auto h-1 bg-blue-500 my-4">
+                <div class="w-4/12 float-left border border-black">
+                     <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+                <div class="w-8/12 float-left border border-black block">
+                     <h1 class="px-4 text-lg">How you have been feeling this 2020:</h1>
+                     <p class="text-justify px-4">From the beginning of the year up to present, we've counted your moods. to show you How
+                         you've been doing to help you how to decide with your current of future situations.
+                     </p>
+                     <ul class="list-none md:list-disc ">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                        <li>Assumenda, quia temporibus eveniet a libero incidunt suscipit</li>
+                        <li>Quidem, ipsam illum quis sed voluptatum quae eum fugit earum</li>
+                      </ul>
+                </div>
+>>>>>>> secondpage
             </div>
             <span class="icon"><i class="fa fa-camera"></i></span>
         </div>
@@ -168,6 +218,7 @@
                                 <img src="img/lifetrack_goals.png" alt="Sub card img">
                             </div>
                         </div>
+<<<<<<< HEAD
                         <div class="sub-card-footer">
                             <a href="javascript:;">SEE ALL GOALS</a>
                         </div>
@@ -186,6 +237,50 @@
         document.getElementById('nav-toggle').onclick = function(){
             document.getElementById("nav-content").classList.toggle("hidden");
         }
+=======
+                    </div>                
+            </div>
+        </div>
+    </div>
+     <div class="clear-both m-6"></div>
+     <!-- end second culomn -->
+    <!-- end content -->
+    <!-- footer-->
+    <div class="bg-blue w-full  flex font-sans" style="background-image:url('img/footer.png');">
+        <div class="container mx-auto">
+            <h1 class="p-4 text-white">All right reserve 2020</h1>
+        </div>
+    </div>
+    <!-- end footer-->
+    <script src="./chart/dist/Chart.bundle.js"></script>
+    <script src="./chart/dist/Chart.bundle.min.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    label: '# of Votes',
+                    data: [6, 3, 15, 5],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.9)',
+                        'rgba(54, 162, 235, 0.9)',
+                        'rgba(255, 206, 86, 0.9)',
+                        'rgba(75, 192, 192, 0.9)'
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)'
+
+                    ],
+                    borderWidth: 1
+                }]
+            }
+        });
+>>>>>>> secondpage
     </script>
 </body>
 </html> 
