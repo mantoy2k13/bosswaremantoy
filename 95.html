@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./tailwind.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/progress-circle.css">
+</head>
+<body class="bg-white-400 font-sans leading-normal tracking-normal">    
+        <div class="tab-card-body">
+             <div class="grid lg:grid-cols-1 md:grid-cols-6  sm:grid-cols-1 xs:grid-cols-1 gap-4 bg-white">     
+                <div class="w-4/5 mx-auto m-8 shadow-lg ">
+                    <div class="w-80 mx-auto">
+                        <p class="text-center text-3xl text-gray-700 p-8 ">Goals</p>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <!-- first column-->
+                        <div class="w-full sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 mt-8 ">
+                            <ul class="w-80">                               
+                                                    <li class="">
+                                                        <div class="all-goals h-8">
+                                                           <a href="#"><img src="img/all_goals.png" class="w-4 h-4 absolute ml-14 mt-2"></a> <p class="text-base font-sans mt-1 ">All Goals</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-4 my-4">
+                                                        <div class="text-center relative text-gray-800 w-64">
+                                                          <a href="#">
+                                                            <img src="img/in_progress_goals.png" class="w-4 h-4 absolute ml-14 mt-2"> 
+                                                          </a>
+                                                          <p class="text-base font-sans">In Progress</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-4 my-4">
+                                                        <div class="text-center relative text-gray-800 w-64">
+                                                          <a href="#">
+                                                            <img src="img/achieved_goals.png" class="w-4 h-4 absolute ml-14 mt-2"> 
+                                                          </a>
+                                                          <p class="text-base font-sans ml-8">Achieved Goals</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                        </div>
+                        <!-- 2nd column-->
+                        <div class="w-full sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 mb-4 ">
+                            <ul class="w-full   inline-block">
+                                <li class="float-right ml-2 ">
+                                    <div class="inline-block ">
+                                        <div class="w-82">
+                                            <div class="flex justify-center mr-4">
+                                                <a href="#" class="p-2 transition duration-300 ease-in-out hover:bg-blue-500 relative hover:text-white mr-4 ">
+                                                    Sort by Due Date <span class="float-right"><img src="img/sort.png" alt="sort" class="w-4 h-4 "></span> 
+                                                </a>
+                                                <a href="" class="border border-blue-500 rounded text-blue-500 p-2 transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white">
+                                                    <i class="fas fa-plus"></i> Add new Goal
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="border-t-2 mx-auto mt-4 mr-20">
+                            </div>
+                            <div class="clear-both">&nbsp;</div>
+                            <div class="overflow-y-scroll ">
+                                <div class="force-overflow">
+                                    <div class="w-full border-2 border-gray-200 p-4 inline-block">
+                                        <div class="w-16 float-left">
+                                                <img src="img/in_gold_progress goal.png" alt="progress" class="w-10 h-10 ">
+                                        </div>
+                                        <div class="w-5/6 float-left mx-auto">
+                                                <div class="float-left">
+                                                    <p class="text-xl text-gray-800 font-bold">Goal Title</p>
+                                                </div>
+                                                <div class=" float-right">
+                                                    <p class="text-base text-blue-800 "><a href="#" class="underline">View Details <i class="fas fa-eye"></i></a> </p>
+                                                </div>
+                                                <div class="clear-both"></div>
+                                                <div class="w-full">
+                                                    <p>Due on Nov 12, 2020</p>
+                                                </div>
+                                                <div class="w-full">
+                                                    <p>OVERDUE Current Objection: Create presentation</p>
+                                                         <div class="w-full ">                                                            
+                                                            <div class="w-full relative pt-1 inline-block">
+                                                                <div class="float-left"><p class="ml-2">45%</p></div>
+                                                                <div class="w-5/6 mx-auto overflow-hidden h-2 mb-4 mt-2 text-xs flex rounded bg-blue-100 float-left  ml-2">
+                                                                    <div class="w-1 shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-400"></div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+</body>

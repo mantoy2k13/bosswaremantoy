@@ -220,7 +220,7 @@
 	color: #FFFFFF;
   position: relative;
 }
-.files p {
+.files p{
 	vertical-align: middle;
 	font-family: "Lato";
 	font-size: 21px;
@@ -280,8 +280,9 @@
   height: 400px;
   overflow-y: scroll;
   margin-bottom: 25px;
-  width: 100%;
+  width: 95%;
   background:none;
+  padding:10px;
 }
 
 .force-overflow {
@@ -303,6 +304,26 @@
   background-color: #7fbae7;
 }
 
+
+.all-goals{	
+	text-align: center;
+	width: 16rem;
+	padding: 0.01rem 0;
+	background: #3797FF;
+	color: #FFFFFF;
+  position: relative;
+}
+
+.all-goals::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-color: transparent #3797FF;
+  border-style: solid;
+  border-width: 20px 0px 12px 30px;
+  top: 0;
+  left: 100%;
+}
 /*end scroll-y with style*/
 /* achievements */
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
