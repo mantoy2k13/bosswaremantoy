@@ -9,7 +9,7 @@
 <meta name="author" content="Remotodojo">
 <meta content="" name="description">
 <meta content="" name="keywords">
-<link href="tailwind.css" rel="stylesheet">
+<link href="./css/tailwind.css" rel="stylesheet">
 <link href="./css/style.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="./css/progress-circle.css">
@@ -109,38 +109,38 @@
                                     <p class="text-left">From the beginning of the year up to present. we've counted your moods</p>
                                     <p class="text-left">to show you how you've been doing to help you how to deal with your</p>
                                     <p class="text-left">current or future situations.</p>
-                                    <div class="w-full pt-4 float-left">
+                                    <div class="py-6 float-left">
                                         <a href="javascript:;">
                                             <div class="rate-img-color relative">
-                                                <img src="img/mood_great@72x.png" alt="Profile Image" class="w-14">
+                                                <img src="img/mood_great@72x.png" alt="Profile Image">
                                                 <div class="absolute top-0 right-0 rounded border-solid border-2 rounded-full border-white bg-green-400 w-7 h-7 "> 10</div>
                                                 <p>Great</p>
                                             </div>
                                         </a>
                                         <a href="javascript:;">
                                             <div class="rate-img-color">
-                                                <img src="img/mood_good@72x.png" alt="Profile Image" class="w-14">
+                                                <img src="img/mood_good@72x.png" alt="Profile Image">
                                                 <div class="absolute top-0 right-0 rounded border-solid border-2 rounded-full border-white bg-green-300 w-7 h-7 "> 10</div>
                                                 <p>Good</p>
                                             </div>
                                         </a>
                                         <a href="javascript:;">
                                             <div class="rate-img-color">
-                                                <img src="img/mood_meh@72x.png" alt="Profile Image" class="w-14">
+                                                <img src="img/mood_meh@72x.png" alt="Profile Image">
                                                 <div class="absolute top-0 right-0 rounded border-solid border-2 rounded-full border-white bg-yellow-200 w-7 h-7 "> 10</div>
                                                 <p>Meh</p>
                                             </div>
                                         </a>
                                         <a href="javascript:;">
                                             <div class="rate-img-color">
-                                                <img src="img/mood_bad@72x.png" alt="Profile Image" class="w-14">
+                                                <img src="img/mood_bad@72x.png" alt="Profile Image">
                                                 <div class="absolute top-0 right-0 rounded border-solid border-2 rounded-full border-white bg-yellow-400 w-7 h-7 "> 10</div>
                                                 <p>Bad</p>
                                             </div>
                                         </a>
                                         <a href="javascript:;">
                                             <div class="rate-img-color ">
-                                                <img src="img/mood_awful@72x.png" alt="Profile Image" class="w-14">
+                                                <img src="img/mood_awful@72x.png" alt="Profile Image">
                                                 <div class="absolute top-0 right-0 rounded border-solid border-2 rounded-full border-white bg-red-400 w-7 h-7 "> 10</div>
                                                 <p>Awful</p>
                                             </div>
@@ -152,8 +152,32 @@
                                 <div class="w-3/6 mx-auto pt-1 pb-1">
                                     <h1 class="text-2xl pt-10 pb-10 text-gray-700">Last Week's Highlights</h1>
                                 </div>
-                                <div class="w-full flex flex-nowrap pb-12">
-                                        <canvas id="highlights"></canvas>
+                                <div class="flex flex-nowrap pb-12">
+                                    <div class="w-80 mx-auto shadow-xl">
+                                        <div class="w-full border-b p-5">
+                                            <h1 class="text-2xl text-center text-gray-700">Rude Customer</h1>
+                                            <p class="text-base text-gray-400">Tuesday | December 29, 2020</p>
+                                            <div class="relative mx-auto w-2/5  z-10 w-12 h-8 bg-blue-400 rounded-full -bottom-10 justify-center items-center"><p class="text-white p-1 ">Rating: <span class="font-bold">5 </span>  <p></div>
+                                        </div>
+                                        
+                                        <div class="w-full p-5">
+                                            <p class="text-justify px-2">Lorem ipsum dolor sit amet,</p>
+                                            <p class="text-justify px-2">Lorem ipsum dolor sit amet,</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="w-80 mx-auto shadow-xl">
+                                        <div class="w-full border-b p-5">
+                                            <h1 class="text-2xl text-center text-gray-700">Rude Customer</h1>
+                                            <p class="text-base text-gray-400">Tuesday | December 29, 2020</p>
+                                            <div class="relative mx-auto w-2/5  z-10 w-12 h-8 bg-blue-400 rounded-full -bottom-10 justify-center items-center"><p class="text-white p-1 ">Rating: <span class="font-bold">5 </span>  <p></div>
+                                        </div>
+                                        
+                                        <div class="w-full p-5">
+                                            <p class="text-justify px-2">Lorem ipsum dolor sit amet,</p>
+                                            <p class="text-justify px-2">Lorem ipsum dolor sit amet,</p>
+                                        </div>
+                                    </div>
                                 </div>
                         </div>
                         <div class="sub-card-footer">
@@ -183,46 +207,21 @@
                         <div class="sub-card-header">
                             <h1>GOALS</h1>
                         </div>
-                            <div class="sub-card-body">
-                                    <div class="w-full">
-                                        <div class="progress-circle progress-50">
-                                            <span>50</span>
-                                        </div>
-                                        <div class="clear-both"> &nbsp;</div>
-                                        <div class="w-40 inline-block">
-                                            <p class="font-semibold">TOTAL GOALS</p>
-                                            <p class="font-bold text-3xl">30</p>
-                                        </div>
-                                        <div class="w-40 inline-block">
-                                            <p class="font-semibold">ACHIEVED</p>
-                                            <p class="font-bold text-3xl">15</p>
-                                        </div>
-                                    </div>
-                                    <div class="sub-card-footer mt-4"></div>
-                                    <div class="w-full mt-4">
-                                        <p class="text-center font-bold text-xl">Upcoming Goals</p>
-                                    </div>
-                                    <div class="w-full mt-4">
-                                        <p class="text-left font-bold text-xl">Goal Title</p>
-                                        <p class="text-left text-sm">Due on January 13, 2021</p>
-                                        <div class="w-full relative pt-1 mt-2  inline-block">
-                                            <div class="float-left"><p class="ml-2">45%</p></div>
-                                            <div class="w-3/4 mx-auto overflow-hidden h-2 mb-4 mt-2 text-xs flex rounded bg-blue-100 float-left  ml-2">
-                                                <div class="w-1/2 shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-400"></div>
-                                            </div>    
-                                        </div>
-                                    </div>
-                                    <div class="w-full ">
-                                        <p class="text-left font-bold text-xl">Goal Title</p>
-                                        <p class="text-left text-sm">Due on January 17, 2021</p>
-                                        <div class="w-full relative pt-1 inline-block">
-                                            <div class="float-left"><p class="ml-2">0%</p></div>
-                                            <div class="w-3/4 mx-auto overflow-hidden h-2 mb-4 mt-2 text-xs flex rounded bg-blue-100 float-left  ml-2">
-                                                <div class="w-1 shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-400"></div>
-                                            </div>    
-                                        </div>
-                                    </div>
+                        <div class="sub-card-body">
+                            <div class="sub-card-img">
+                                <div class="progress-circle progress-50"><span>50</span></div>
                             </div>
+                            <div class="flex flex-nowrap ">
+                                <div class="w-80 mx-auto">
+                                    <p class="text-gray-500">TOTAL GOALS</p>
+                                    <p>30</p>
+                                </div>
+                                <div class="w-80 mx-auto">
+                                    <p class="text-gray-500">ACHIEVED</p>
+                                    <p>15</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="sub-card-footer">
                             <a href="javascript:;">SEE ALL GOALS</a>
                         </div>
