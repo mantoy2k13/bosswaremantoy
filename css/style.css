@@ -1,6 +1,20 @@
 .banner {
     background-image: url('../img/bg-header.jpg');
 }
+
+.laptop {
+  background-image: url('../img/employer_review_page.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 86rem;
+  position: absolute;
+  right: 100px;
+  background-size: contain;
+  top:100px;
+  bottom: 0;
+}
+
 .profile-img {
     position: absolute;
     width: 13rem;
@@ -193,11 +207,103 @@
     height: 75px;
     border-radius: 50%;
     overflow: visible;
-    margin: 0 10px;
+    margin: 0px;
     display: inline-block;
     transition: .2s;
 }
+.files{
+	margin: 15px 10px;
+	text-align: center;
+	width: 12rem;
+	padding: 0.01rem 0;
+	background: #3797FF;
+	color: #FFFFFF;
+  position: relative;
+}
+.files p {
+	vertical-align: middle;
+	font-family: "Lato";
+	font-size: 21px;
+}
+.files::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-color: transparent #3797FF;
+  border-style: solid;
+  border-width: 20px 0px 11px 30px;
+  top: 0;
+  left: 100%;
+}
+.grad {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to left top,
+    #27b3e7,
+    #2fb8ea,
+    #37bdec,
+    #3ec1ef,
+    #45c6f1,
+    #47c7f2,
+    #48c9f2,
+    #4acaf3,
+    #47c8f2,
+    #43c6f2,
+    #40c4f1,
+    #3cc2f0
+  );
+}
 
+.leftbg {
+  position: absolute;
+  bottom: 0;
+  border-bottom-right-radius: ;
+  background-repeat: no-repeat;
+  background-position: right;
+  right: 0px;
+}
+.image-overlay {
+  background-image: url('/img/employer_review_page_shape.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 86rem;
+  position: absolute;
+  right: 0;
+  background-size: contain;
+  bottom: 0;
+}
+
+/* scroll-y with style*/
+.overflow-y-scroll {  
+  height: 400px;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+  width: 100%;
+  background:none;
+}
+
+.force-overflow {
+  min-height:450px;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-track {
+  border: 1px solid #fff;
+  padding: 2px 0;
+  background-color:  #e7e7e7; 
+}
+
+.overflow-y-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #7fbae7;
+}
+
+/*end scroll-y with style*/
 /* achievements */
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 
