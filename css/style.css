@@ -325,6 +325,10 @@
   left: 100%;
 }
 /*end scroll-y with style*/
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 /* achievements */
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 
