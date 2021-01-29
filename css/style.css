@@ -329,6 +329,18 @@
   display: block;
 }
 
+/*adding styles daryl*/
+p.experience::after{
+    content: '';
+    
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #6bcbef;
+    bottom: 0;
+    left: calc(50% - 10px);
+}
+
 /* achievements */
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 
