@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+<title>BossWare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Remotodojo">
+<meta content="" name="description">
+<meta content="" name="keywords">
+<link href="./tailwind.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/progress-circle.css">
+<style>
+    .modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
+</style>
+</head>
+<body class="bg-white-400 font-sans leading-normal tracking-normal">
+
+	<nav class="flex items-center justify-between flex-wrap bg-white p-3 fixed w-full z-10 top-0">
+		<div class="flex items-center flex-shrink-0 text-white mr-4">
+			<a class="text-black no-underline hover:text-gray-500 hover:no-underline" href="#">
+				<span class="text-2xl pl-2"><i class="em em-grinning"></i> Bossware Logo Here</span>
+			</a>
+		</div>
+
+		<div class="block lg:hidden">
+			<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+				<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+			</button>
+		</div>
+
+		<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-4 lg:pt-0" id="nav-content">
+			<ul class="list-reset lg:flex justify-end flex-1 items-center">
+				<li class="mr-3">
+					<a class="inline-block py-2 px-4 text-white no-underline" href="#">Active</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block text-gray-600 no-underline hover:text-yellow-500 hover:text-underline py-2 px-4" href="javascript:;">Home</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block text-gray-600 no-underline hover:text-yellow-500 hover:text-underline py-2 px-4" href="javascript:;">How it works</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block text-gray-600 no-underline hover:text-yellow-500 hover:text-underline py-2 px-4" href="javascript:;">FAQs</a>
+                </li>
+                <li class="mr-3">
+					<a class="inline-block text-gray-600 no-underline hover:text-yellow-500 hover:text-underline py-2 px-4" href="javascript:;">About Us</a>
+                </li>
+                <li class="mr-3">
+					<a class="inline-block text-gray-600 no-underline hover:text-yellow-500 hover:text-underline py-2 px-4" href="javascript:;">John</a>
+				</li>
+			</ul>
+		</div>
+    </nav>
+    
+	<!--Banner-->
+    <section class="bg-cover bg-center bg-no-repeat h-56 mt-16 banner">
+        <span class="icon icon-banner"><i class="fa fa-camera"></i></span>
+    </section>
+    <section class="profile-info-wrapper">
+        <div class="info-profile">
+            <div class="profile-img">
+                <img src="img/profile.jpg" alt="Profile Image">
+            </div>
+            <span class="icon"><i class="fa fa-camera"></i></span>
+        </div>
+        <div class="info-content">
+            <span class="icon icon-pen"><i class="fa fa-pen"></i></span>
+            <h1>John Doe</h1>
+            <p class="text-gray-500"><i class="fa fa-clock"></i> Joined March 10, 2020</p>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1">
+                <p class="text-black"><i class="fa fa-map-marker"></i> Australia</p>
+                <p class="text-black"><i class="fa fa-envelope"></i> johndoe@gmail.com</p>
+            </div>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1">
+                <p class="text-black"><i class="fa fa-birthday-cake"></i> December 24, 2992</p>
+                <p class="text-black"><i class="fa fa-phone"></i> +62 000 0000 000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab with content section -->
+    <section class="big-tab-card">
+        <div class="tab-card-header">
+            <ul class="tab-menus">
+                <li class="active">Overview</li>
+                <li>My Journal</li>
+                <li>Documents</li>
+                <li>Goals</li>
+                <li>Applications</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+        <div class="tab-card-body">
+            <div class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1 gap-4">     
+                <div class="w-80 mx-auto">
+                    <!--Button for open modal -->
+                    <button class="modal-open bg-transparent border border-gray-500 hover:border-indigo-500 text-gray-500 hover:text-indigo-500 font-bold py-2 px-4 rounded-full">Open Modal</button>
+<!--Modal-->
+<div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+    <div class="modal-overlay absolute w-full h-fullb g-gray-900 opacity-50"></div>
+    
+    <div class="modal-container bg-white w-11/12 md:max-w-4xl mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    
+    <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+        <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+        </svg>
+        <span class="text-sm">(Esc)</span>
+    </div>
+    <!-- Add margin if you want to see some of the overlay behind the modal-->
+    <div class="modal-content py-4 text-left px-6">
+        <!--Title-->
+        <div class="flex justify-between items-center pb-3">
+            
+        <div class="modal-close cursor-pointer z-50">
+            <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+            </svg>
+        </div>
+        </div>
+           
+        <!--Body--> 
+        <!--Footer-->
+        <div class="flex justify-end pt-2">
+        <button class="px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">Action</button>
+        <button class="modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>All Rights Reserved 2020</p>
+    </footer>
+    <script src="./chart/dist/Chart.bundle.js"></script>
+    <script src="./chart/dist/Chart.bundle.min.js"></script>
+    
+    <script>
+        //Javascript to toggle the menu
+        document.getElementById('nav-toggle').onclick = function(){
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+        // for open modal script
+        var openmodal = document.querySelectorAll('.modal-open')
+    for (var i = 0; i < openmodal.length; i++) {
+      openmodal[i].addEventListener('click', function(event){
+    	event.preventDefault()
+    	toggleModal()
+      })
+    }
+    
+    const overlay = document.querySelector('.modal-overlay')
+    overlay.addEventListener('click', toggleModal)
+    
+    var closemodal = document.querySelectorAll('.modal-close')
+    for (var i = 0; i < closemodal.length; i++) {
+      closemodal[i].addEventListener('click', toggleModal)
+    }
+    
+    document.onkeydown = function(evt) {
+      evt = evt || window.event
+      var isEscape = false
+      if ("key" in evt) {
+    	isEscape = (evt.key === "Escape" || evt.key === "Esc")
+      } else {
+    	isEscape = (evt.keyCode === 27)
+      }
+      if (isEscape && document.body.classList.contains('modal-active')) {
+    	toggleModal()
+      }
+    };
+    
+    
+    function toggleModal () {
+      const body = document.querySelector('body')
+      const modal = document.querySelector('.modal')
+      modal.classList.toggle('opacity-0')
+      modal.classList.toggle('pointer-events-none')
+      body.classList.toggle('modal-active')
+    }
+    
+    </script>
+</body>
+</html> 
