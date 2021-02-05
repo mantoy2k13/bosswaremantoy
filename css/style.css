@@ -9,9 +9,9 @@
   height: 30rem;
   width: 86rem;
   position: absolute;
-  right: 100px;
+  right: 7%;
   background-size: contain;
-  top:100px;
+  top:100%;
   bottom: 0;
 }
 
@@ -180,6 +180,11 @@
 .sub-card-footer {
     border-top: 1px solid #eee;
     padding-top: 15px;
+}
+.sub-card-footer2 {
+  border-top: 1px solid #eee;
+  width: 80%;
+  margin:0px auto;
 }
 .sub-card-footer a {
     color: #00a0dc;
@@ -547,7 +552,7 @@ body {
 .hide {
   display: none;
 }
-    
+
 .myDIV:hover + .hide {
   display: block;
   color:gray;
@@ -556,8 +561,9 @@ body {
   border-radius:10px;
   padding:10px;
   margin-top:10px;
-  
+  float:right;
 }
+/*
 .myDIV:hover + .hide::after{ 
   content: "";
   position: absolute;
@@ -567,7 +573,9 @@ body {
   border-width: 15px;
   border-style: solid;
   border-color: #e3f2f9 transparent transparent transparent;
+  
 }
+*/
 /*end pop up*/
 
 /*switch toggle*/

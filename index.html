@@ -185,6 +185,11 @@
     <script src="./chart/dist/Chart.bundle.js"></script>
     <script src="./chart/dist/Chart.bundle.min.js"></script>
     <script>
+        //Javascript to toggle the menu
+           document.getElementById('nav-toggle').onclick = function(){
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+
         var ctx = document.getElementById('myChart');
         var myChart = new Chart(ctx, {
             type: 'doughnut',
