@@ -9,9 +9,9 @@
   height: 30rem;
   width: 86rem;
   position: absolute;
-  right: 7%;
+  right: 0%;
   background-size: contain;
-  top:100%;
+  top:0;
   bottom: 0;
 }
 
@@ -285,7 +285,7 @@
   height: 400px;
   overflow-y: scroll;
   margin-bottom: 25px;
-  width: 95%;
+  width: 100%;
   background:none;
   padding:10px;
 }
@@ -700,7 +700,7 @@ input:checked + .slider:before {
       height: 10rem;
   }
   .info-content h1 {
-      font-size: 30px;
+      font-size: 30px; 
       font-weight: 500;
       color: #3c3c3c;
   }
@@ -711,6 +711,17 @@ input:checked + .slider:before {
       width: 60px;
       height: 60px;
       margin: 0 5px;
+  }
+  .laptop{
+    display:none;
+  }
+  .image-overlay{
+    display:none;
+  }
+  .w-1\/2.p-8.m-20.bg-white.border-2.border-blue-400{
+    width:650px;
+    padding:5px;
+    margin:60px 0px 0px 0px;
   }
   
 }
@@ -725,6 +736,17 @@ input:checked + .slider:before {
   }
   .banner {
       margin: 0 !important;
+  }
+  .w-1\/2.p-8.m-20.bg-white.border-2.border-blue-400{
+    width:425px;
+    padding:5px;
+    margin:50px 0px 0px 0px;
+  }
+  .laptop{
+    display:none;
+  }
+  .image-overlay{
+    display:none;
   }
 }
 
