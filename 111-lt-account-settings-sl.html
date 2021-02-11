@@ -1,105 +1,264 @@
-
 <!DOCTYPE html>
 <html>
-<html prefix="og: http://ogp.me/ns#">
-<head>
-    <meta charset="utf-8">
-<title>BossWare</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="author" content="Remotodojo">
-<meta content="" name="description">
-<meta content="" name="keywords">
-<link href="./tailwind.css" rel="stylesheet">
-<link href="./css/style.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-</head>
-<body class="bg-white-400 font-sans leading-normal tracking-normal">
-
-  
-  <!--Banner-->
-  
-
-    <!-- Tab with content section -->
-    <section class="big-tab-card">
+  <html prefix="og: http://ogp.me/ns#">
+    <head>
+      <meta charset="utf-8" />
+      <title>BossWare</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content="Remotodojo" />
+      <meta content="" name="description" />
+      <meta content="" name="keywords" />
+      <link href="./tailwind.css" rel="stylesheet" />
+      <link href="./css/style.css" rel="stylesheet" />
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        rel="stylesheet"
+      />
+    </head>
+    <body class="bg-white-400 font-sans leading-normal tracking-normal">
+      <!--Banner-->
+      <!-- Tab with content section -->
+      <section class="big-tab-card">
         <div class="tab-card-body">
-            <div class="flex">
-              <div class="w-full flex flex-wrap mt-6 ">
-                  <div class="w-full m-20 shadow-lg border py-20"> 
-                    <ul class="w-full flex flex-wrap">
-                          <li class="w-full float-left">
-                              <div class="">
-                                  <p class="text-center text-3xl text-gray-700  font-bold">ACCOUNT SETTINGS</p>
-                              </div>
-                          </li>
-                    </ul>
-                    <div class="flex-container mt-10">
-                      <div class="flex-item-left">
-                          <div class="w-1/2 ">
-                            <ul>
-                                <li class="files">
-                                  <p class="w-full">Security Login</p>      
-                                </li>
-                                <li class="p-2 ">
-                                 <p class="text-left">Subscription</p> 
-                                </li>
-                                <li class="p-2">
-                                  <p class="text-left">Notifications</p>                                  
-                                </li>
-                            </ul>
+          <div class="flex">
+            <div class="w-full flex flex-wrap mt-6">
+              <div class="w-full m-20 shadow-lg border py-20">
+                <ul class="w-full flex flex-wrap">
+                  <li class="w-full float-left">
+                    <div class="">
+                      <p class="text-center text-3xl text-gray-700 font-bold">
+                        ACCOUNT SETTINGS
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="flex-container mt-10">
+                  <div class="flex-item-left">
+                    <div class="w-1/2">
+                      <ul>
+                        <li class="files">
+                          <p class="w-full">Security Login</p>
+                        </li>
+                        <li class="p-2">
+                          <p class="text-left">Subscription</p>
+                        </li>
+                        <li class="p-2">
+                          <p class="text-left">Notifications</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="flex-item-right">
+                    <div class="w-full p-4">
+                      <div class="">
+                        <div class="tab w-full overflow-hidden">
+                          <input
+                            class="absolute opacity-0"
+                            id="tab-multi-one"
+                            type="checkbox"
+                            name="tabs"
+                          />
+                          <label
+                            class="block p-5 leading-normal cursor-pointer"
+                            for="tab-multi-one"
+                          >
+                            <p
+                              class="text-gray-700 font-bold text-left text-base"
+                            >
+                              E-mail address
+                            </p>
+                            <p class="italic text-blue-400 text-sm text-left">
+                              Change your -email address
+                            </p>
+                          </label>
+                          <div
+                            class="tab-content overflow-hidden border-indigo-500 leading-normal"
+                          >
+                            <div class="w-1/2 p-4">
+                              <form class="" id="form">
+                                <!--Email -->
+                                <div class="w-ull">
+                                  <label class="text-base font-bold">
+                                    Your Current e-mail
+                                  </label>
+                                </div>
+                                <div class="w-full border">
+                                  <input
+                                    type=""
+                                    name=""
+                                    value=""
+                                    placeholder="Current E-mail"
+                                    class="text-base px-4"
+                                  />
+                                </div>
+                                <!--New Email -->
+                                <div class="w-ull">
+                                  <label class="text-base font-bold">
+                                    Your New e-password
+                                  </label>
+                                </div>
+                                <div class="w-full border">
+                                  <input
+                                    type=""
+                                    name=""
+                                    value=""
+                                    placeholder="New E-mail"
+                                    class="text-base px-4"
+                                  />
+                                </div>
+                                <!-- Enter a password-->
+                                <div class="w-ull">
+                                  <label class="text-base font-bold">
+                                    Enter Password
+                                  </label>
+                                </div>
+                                <div class="w-full border">
+                                  <input
+                                    type=""
+                                    name=""
+                                    value=""
+                                    placeholder="Password"
+                                    class="text-base p-4"
+                                  />
+                                </div>
+                                <!-- Button confirm-->
+
+                                <div class="w-full">
+                                  <button
+                                    class="bg-green-400 p-2 text-xl text-white rounded"
+                                  >
+                                    CONFIRM
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
                           </div>
-                      </div>
-                      <div class="flex-item-right ">
-                          <div class="">
-                              <p class="text-gray-700 font-bold text-left text-base ">E-mail address</p>  
-                              <p class="italic text-blue-400 text-sm text-left">Change your -email address</p>
-                              <div class="form">
-                                  <form class="" id="form">
-                                    <div class="w-1/2 p-4">
-                                      <label class="text-base font-bold">
-                                        Your Current e-mail
-                                      </label>
-                                      <input type="" name="" value="Current E-mail" class="border w-full text-xl p-2">  
-                                    </div>
-                                    
-                                  </form>
-                              </div>
+                        </div>
+                        <div class="tab w-full overflow-hidden border-t">
+                          <input
+                            class="absolute opacity-0"
+                            id="tab-multi-two"
+                            type="checkbox"
+                            name="tabs"
+                          />
+                          <label
+                            class="block p-5 leading-normal cursor-pointer"
+                            for="tab-multi-two"
+                          >
+                            <div class="">
+                              <p
+                                class="text-gray-700 font-bold text-left text-base"
+                              >
+                                Change Password
+                              </p>
+                              <p class="italic text-blue-400 text-sm text-left">
+                                Choose a strong and unique password that your're
+                                not using elsewhere.
+                              </p>
+                            </div>
+                          </label>
+                          <div
+                            class="tab-content overflow-hidden leading-normal"
+                          >
+                            <div class="w-1/2 p-4">
+                              <form class="" id="form">
+                                <!--Email -->
+                                <div class="w-ull">
+                                  <label class="text-base font-bold">
+                                    Your Current Passowrd
+                                  </label>
+                                </div>
+                                <div class="w-full border">
+                                  <input
+                                    type=""
+                                    name=""
+                                    value=""
+                                    placeholder="Current Password"
+                                    class="text-base px-4"
+                                  />
+                                </div>
+                                <!--New Email -->
+                                <div class="w-ull">
+                                  <label class="text-base font-bold">
+                                    Your New password
+                                  </label>
+                                </div>
+                                <div class="w-full border">
+                                  <input
+                                    type=""
+                                    name=""
+                                    value=""
+                                    placeholder="New Password"
+                                    class="text-base px-4"
+                                  />
+                                </div>
+                                <!-- Enter a password-->
+                                <div class="w-ull">
+                                  <label class="text-base font-bold w-full">
+                                    Re-Enter new Password
+                                  </label>
+                                </div>
+                                <div class="w-full border">
+                                  <input
+                                    type=""
+                                    name=""
+                                    value=""
+                                    placeholder="New Password"
+                                    class="text-base p-4"
+                                  />
+                                </div>
+                                <!-- Button confirm-->
+                                <div class="w-full">
+                                  <button
+                                    class="bg-green-400 p-2 text-xl text-white rounded"
+                                  >
+                                    CONFIRM
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
                           </div>
-                          <div class="w-full border my-4">
-                          </div>
-                          <div class="">
-                              <p class="text-gray-700 font-bold text-left text-base ">Change Password</p>  
-                              <p class="italic text-blue-400 text-sm text-left">Choose a strong and unique password that your're not using elsewhere.</p>
-                          </div>
-                          <div class="w-full border my-4">
-                          </div>
-                          <div class="">
-                              <p class="text-gray-700 font-bold text-left text-base ">Close Account</p>  
-                              <p class="italic text-blue-400 text-sm text-left">Learn about your options, and close your account.</p>
-                          </div>
-                          
+                        </div>
+                        <!-- close account-->
+                        <div class="w-full p-4">
+                          <p
+                            class="text-gray-700 font-bold text-left text-base"
+                          >
+                            Close Account
+                          </p>
+                          <p class="italic text-blue-400 text-sm text-left">
+                            Learn about your options, and close your account.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
+          </div>
         </div>
-
-    </section>
-     <div class="clear-both m-6"></div>
-     <!-- end second culomn -->
-    <!-- end content -->
-    <!-- footer-->
-    <div class="bg-blue w-full  flex font-sans" style="background-image:url('img/footer-img.png');">
+      </section>
+      <div class="clear-both m-6"></div>
+      <!-- end second culomn -->
+      <!-- end content -->
+      <!-- footer-->
+      <div
+        class="bg-blue w-full flex font-sans"
+        style="background-image: url('img/footer-img.png')"
+      >
         <div class="container mx-auto">
-            <h1 class="p-4 text-white">All right reserve 2020</h1>
+          <h1 class="p-4 text-white">All right reserve 2020</h1>
         </div>
-    </div>
-    <!-- end footer-->
-</body>
-<script>
-       //Javascript to toggle the menu
-       document.getElementById('nav-toggle').onclick = function(){
-            document.getElementById("nav-content").classList.toggle("hidden");
-        }
-</script>
-</html> 
+      </div>
+      <!-- end footer-->
+    </body>
+    <script>
+      //Javascript to toggle the menu
+      document.getElementById("nav-toggle").onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+      };
+      /* Optional Javascript to close the radio button version by clicking it again */
+    </script>
+  </html>
+</html>
