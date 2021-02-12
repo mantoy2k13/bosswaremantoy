@@ -32,14 +32,14 @@
                     </div>
                   </li>
                 </ul>
-                <div class="flex flex-row mt-10">
-                  <div class="flex-wrap">
+                <div class="flex-container mt-10">
+                  <div class="flex-item-left">
                     <div class="w-1/2">
                       <ul>
-                        <li class="my-4">
+                        <li class="my-2">
                           <p class="text-base pl-8">Security Login</p>
                         </li>
-                        <li class="my-4">
+                        <li class="my-2">
                           <p class="text-left text-base pl-8 ">Subscription</p>
                         </li>
                         <li class="account-settings">
@@ -49,210 +49,49 @@
                     </div>
                   </div>
                   <div class="flex-item-right">
-                    <div class="w-full p-4">
-                      <div class="">
-                        <div class="tab w-full overflow-hidden">
-                          <input
-                            class="absolute opacity-0"
-                            id="tab-multi-one"
-                            type="checkbox"
-                            name="tabs"
-                          />
-                          <label
-                            class="block p-5 leading-normal cursor-pointer"
-                            for="tab-multi-one"
-                          >
-                            <p
-                              class="text-gray-700 font-bold text-left text-base"
-                            >
-                              Bosware subscription
-                            </p>
-                            <p class="italic text-blue-400 text-sm text-left">
-                              Manage your current subscription
-                            </p>
-                          </label>
-                          <div
-                            class="tab-content overflow-hidden border-indigo-500 leading-normal"
-                          >
-                            <div class="w-full p-4">
-                              <div class="flex flex-row border">
-                                <div class="w-1/2">
-                                  <!-- VISA-->
-                                  <div class="w-full p-4">
-                                    <p class="text-left text-xl">VISA</p>
-                                    <p class="text-left text-base">
-                                      **** 88888
-                                    </p>
-                                    <p class="text-base text-left">
-                                      Expiration 08/21
-                                    </p>
-                                  </div>
-                                </div>
-                                <div class="w-1/2 p-4">
-                                  <p
-                                    class="text-right text-base underline text-blue-500"
-                                  >
-                                    Change payment method
-                                  </p>
-                                </div>
+                    <div class="flex-wrap">
+                        <div class="w-full ">
+                          <div class="flex flex-row ">
+                            <div class="w-1/2">
+                              <!-- VISA-->
+                              <div class="w-full p-4">
+                                <p class="text-left text-base font-bold">Weekly Mood log e-mail reminder</p>
+                                <p class="text-left text-base italic text-blue-500">Get reminder every week to log your mood</p>  
                               </div>
-                              <!--end visa-->
                             </div>
-                            <!-- start candodate-->
-                            <div class="w-full flex flex-row p-4">
-                              <div class="w-1/2">
-                                <!-- VISA-->
-                                <div class="w-full p-4">
-                                  <p class="text-left text-xl">
-                                    Casual Candidate
-                                  </p>
-                                  <p class="text-left text-base">
-                                    $5.00 per month
-                                  </p>
-                                  <p class="text-base text-left">
-                                    Your plan renews on Febuary 10, 2021
-                                  </p>
-                                  <p class="text-base text-left text-blue-500">
-                                    Cancel anytime
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="w-1/2">
-                                <!-- VISA-->
-                                <div class="w-full p-4">
-                                  <p class="text-right">
-                                    <a
-                                      href="#"
-                                      class="text-right rounded border-2 border-blue-500 text-base p-2 w-20 text-blue-500"
-                                    >
-                                      Cancel
-                                    </a>
-                                  </p>
-                                </div>
+                            <div class="w-1/2 p-4">
+                              <div class="w-20 float-right">
+                                <label class="switch">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="slider round p-1.5 text-base">ON OFF</span>
+                                </label>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="tab w-full overflow-hidden border-t">
-                          <input
-                            class="absolute opacity-0"
-                            id="tab-multi-two"
-                            type="checkbox"
-                            name="tabs"
-                          />
-                          <label
-                            class="block p-5 leading-normal cursor-pointer"
-                            for="tab-multi-two"
-                          >
-                            <div class="">
-                              <p
-                                class="text-gray-700 font-bold text-left text-base"
-                              >
-                                Billing history
-                              </p>
-                              <p class="italic text-blue-400 text-sm text-left">
-                                See your previous transaction on Bosware
-                              </p>
-                            </div>
-                          </label>
-                          <div
-                            class="tab-content overflow-hidden leading-normal"
-                          >
-                            <div class="p-4 flex flex-wrap">
-                              <table class="table-auto w-full" id="mytab1">
-                                <tr class="">
-                                  <th class="text-left self-start">
-                                    <select
-                                      name=""
-                                      id=""
-                                      class="border p-2 rounded text-base"
-                                    >
-                                      <option value="">2020</option>
-                                    </select>
-                                  </th>
-                                  <th class="text-base text-left ml-4">Payment</th>
-                                  <th class="text-base text-left ml-4">
-                                    payment</th>
-                                  </th>
-                                </tr>
-
-                                <tbody>
-                                  <tr class="">
-                                    <td class="text-base text-left">
-                                      Dec 10, 2020
-                                      <input type="checkbox" name="" id="" />
-                                    </td>
-                                    <td class="text-base text-left">$5.00</td>
-                                    <td class="text-base text-left">
-                                      Casual Candidate Subscription
-                                    </td>
-                                  </tr>
-                                  <tr class="">
-                                    <td class="text-base text-left">
-                                      Dec 10, 2020
-                                      <input type="checkbox" name="" id="" />
-                                    </td>
-                                    <td class="text-base text-left">$5.00</td>
-                                    <td class="text-base text-left">
-                                      Casual Candidate Subscription
-                                    </td>
-                                  </tr><tr class="">
-                                    <td class="text-base text-left">
-                                      Dec 10, 2020
-                                      <input type="checkbox" name="" id="" />
-                                    </td>
-                                    <td class="text-base text-left">$5.00</td>
-                                    <td class="text-base text-left">
-                                      Casual Candidate Subscription
-                                    </td>
-                                  </tr><tr class="">
-                                    <td class="text-base text-left">
-                                      Dec 10, 2020
-                                      <input type="checkbox" name="" id="" />
-                                    </td>
-                                    <td class="text-base text-left">$5.00</td>
-                                    <td class="text-base text-left">
-                                      Casual Candidate Subscription
-                                    </td>
-                                  </tr><tr class="">
-                                    <td class="text-base text-left">
-                                      Dec 10, 2020
-                                      <input type="checkbox" name="" id="" />
-                                    </td>
-                                    <td class="text-base text-left">$5.00</td>
-                                    <td class="text-base text-left">
-                                      Casual Candidate Subscription
-                                    </td>
-                                  </tr><tr class="">
-                                    <td class="text-base text-left">
-                                      Dec 10, 2020
-                                      <input type="checkbox" name="" id="" />
-                                    </td>
-                                    <td class="text-base text-left">$5.00</td>
-                                    <td class="text-base text-left">
-                                      Casual Candidate Subscription
-                                    </td>
-                                  </tr><tr class="">
-                                    <td class="text-base text-left">
-                                      Dec 10, 2020
-                                      <input type="checkbox" name="" id="" />
-                                    </td>
-                                    <td class="text-base text-left">$5.00</td>
-                                    <td class="text-base text-left">
-                                      Casual Candidate Subscription
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                              <!-- end table-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- close account-->
-                      </div>
                     </div>
+                    <div class="flex-wrap">
+                      <div class="w-full ">
+                        <div class="flex flex-row ">
+                          <div class="w-1/2">
+                            <!-- VISA-->
+                            <div class="w-full p-4">
+                              <p class="text-left text-base font-bold">Goals e-mail reminder</p>
+                              <p class="text-left text-base italic text-blue-500">Get reminder about upcoming deadline and goals past due.</p>  
+                            </div>
+                          </div>
+                          <div class="w-1/2 p-4">
+                            <div class="w-20 float-right">
+                              <label class="switch">
+                                  <input type="checkbox" >
+                                  <span class="slider round p-1.5 text-base text-center">ON OFF</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
-                </div>
+                  </div>
               </div>
             </div>
           </div>
