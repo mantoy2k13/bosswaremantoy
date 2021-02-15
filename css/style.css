@@ -138,6 +138,10 @@
   transition: 0.2s;
   cursor: pointer;
 }
+
+.tab-menus li:first-child {
+  margin-right: 300px;
+}
 .tab-menus li.active,
 .tab-menus li:hover {
   border-bottom-style: solid;
@@ -152,7 +156,7 @@
   box-shadow: 0px 0px 7px 5px #eaeaea;
   padding: 25px 0px 15px 0px;
   text-align: center;
-  margin: 10px 25px 40px 25px;
+  margin: 40px;
 }
 .sub-card-header h1 {
   font-size: 27px;
@@ -515,6 +519,13 @@ $label-font-size-redo: $default-size * 4;
   background-color: #6574cd; /*.bg-indigo*/
   color: #f8fafc; /*.text-grey-lightest*/
 }
+/*my tabs menu*/
+ul#my-tabs-menu {
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  transition: 0.2s;
+}
 /*end tab accordion*/
 @mixin draw-progress--solid($progress, $color, $bg-color) {
   background: linear-gradient(to right, $color 50%, $bg-color 50%);
@@ -773,6 +784,8 @@ input:checked + .slider:before {
 }
 /* end switch toggle*/
 
+/*tab-menus*/
+
 /* RESPONSIVE */
 @media only screen and (max-width: 1440px) {
   .tab-card-body {
@@ -858,6 +871,9 @@ input:checked + .slider:before {
   }
   .flex-container {
     flex-direction: column;
+  }
+  .tab-menus li {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 425px) {
