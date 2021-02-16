@@ -3,7 +3,31 @@
 }
 
 .laptop {
-  background-image: url("../img/employer_review_page.png");
+  background-image: url("../img/employer-review.gif");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 86rem;
+  position: absolute;
+  right: 0%;
+  background-size: contain;
+  top: 0;
+  bottom: 0;
+}
+.gear {
+  background-image: url("../img/employer-review-cog.gif");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 86rem;
+  position: absolute;
+  right: 0%;
+  background-size: contain;
+  top: 0;
+  bottom: 0;
+}
+.people {
+  background-image: url("../img/employer-review-people.gif");
   background-position: right bottom;
   background-repeat: no-repeat;
   height: 30rem;
@@ -833,7 +857,7 @@ input:checked + .slider:before {
 /* screen maximum 676 px*/
 @media only screen and (max-width: 767px) {
   .tab-card-body {
-    padding: 15px;
+    padding: 0px;
   }
   .footer {
     padding: 15px;
@@ -903,6 +927,7 @@ input:checked + .slider:before {
 
 @media only screen and (min-width: 375px) {
   .tab-card-body {
-    padding: 0rem 0rem;
+    /*padding: 0rem 0rem;*/
+    padding: 0px;
   }
 }
